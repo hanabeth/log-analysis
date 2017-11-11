@@ -81,8 +81,7 @@ order by count(status);
 View to find percentage of error status codes in a day - find_error_percent
 ```
 create view find_error_percent as
-select total_status_count.data, round((100.0*error_count)/total_status_count.count, 2)
-as percent
+select error_count.date, round((100.0*error_count.errors)/total_status_count.count, 2) as percent
 from error_count, total_status_count
 where error_count.date = total_status_count.date;
 ```

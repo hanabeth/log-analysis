@@ -1,28 +1,22 @@
 
+The three most viewed articles are:
 
 
-               title                | views  
-------------------------------------+--------
- Candidate is jerk, alleges rival   | 338647
- Bears love berries, alleges bear   | 253801
- Bad things gone, say good people   | 170098
- Goats eat Google's lawn            |  84906
- Trouble for troubled troublemakers |  84810
- Balloon goons doomed               |  84557
- There are a lot of bears           |  84504
- Media obsessed with bears          |  84383
-(8 rows)
-
-          name          |  views  
-------------------------+---------
- Markoff Chaney         | 1677735
- Anonymous Contributor  | 1677735
- Rudolf von Treppenwitz | 1677735
- Ursula La Multa        | 1677735
-(4 rows)
+		 title 		 | views
+---------------------------------+--------
+Candidate is jerk, alleges rival | 338647
+Bears love berries, alleges bear | 253801
+Bad things gone, say good people | 170098
 
 
-    date    | percent 
-------------+---------
- 2016-07-17 |       2
-(1 row)
+The three most viewed authors are: 
+-----------------------------------------
+Markoff Chaney - 1677735
+Anonymous Contributor - 1677735
+Rudolf von Treppenwitz - 1677735
+Ursula La Multa - 1677735
+
+
+Dates that bad requests made up more than 1% of requests: 
+-------------------------
+       2016-07-17 | 2

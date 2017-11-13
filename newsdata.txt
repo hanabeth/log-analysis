@@ -1,22 +1,19 @@
-
 The three most viewed articles are:
-
-
 		 title 		 | views
----------------------------------+--------
+------------------------------------------------
 Candidate is jerk, alleges rival | 338647
 Bears love berries, alleges bear | 253801
 Bad things gone, say good people | 170098
 
 
 The three most viewed authors are: 
------------------------------------------
-Markoff Chaney - 1677735
-Anonymous Contributor - 1677735
-Rudolf von Treppenwitz - 1677735
-Ursula La Multa - 1677735
+------------------------------------------------
+Ursula La Multa | 507594
+Rudolf von Treppenwitz | 423457
+Anonymous Contributor | 170098
 
 
 Dates that bad requests made up more than 1% of requests: 
--------------------------
-       2016-07-17 | 2
+------------------------------------------------
+2016-07-17 | 2.26
+

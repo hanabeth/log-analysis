@@ -17,11 +17,15 @@ Files:
   Vagrant (Linux-based VM)
   Virtual Box
 
-2. Clone this repository
-
 ## Running the Program
 
-1. Navigate to where this repository is cloned in the terminal.
+1. Download [this](https://github.com/udacity/fullstack-nanodegree-vm) and then navigate to where this repository is cloned in the terminal.
+```
+cd fullstack-nanodegree-vm/
+cd vagrant/
+```
+Clone this repo in the same file as the newsdata.sql
+
 2. Launch Vagrant with the following command:
   ```
   vagrant up

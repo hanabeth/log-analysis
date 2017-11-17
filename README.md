@@ -14,6 +14,8 @@ The python script answers the following three questions:
 Files:
 * newsdata.sql - database provided by Udacity. [Download here](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip)
 * newsdata.py - SQL database - query code.
+* create_views.sql - SQL file that imports views needed to run the Python script.
+* Vagrantfile - marks root directory of project and the kind of machine needed to run project.
 
 ## Dependency
 
@@ -24,12 +26,7 @@ Please make sure the following are installed:
 
 ## Running the Program
 
-1. Start by going into you vagrant file.
-```
-cd fullstack-nanodegree-vm/
-cd vagrant/
-```
-Clone this repo in the same file as the newsdata.sql
+1. Start by navigating to the directory where you cloned the project files.
 
 2. Launch Vagrant with the following command:
   ```

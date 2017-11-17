@@ -68,7 +68,7 @@ View of articles title and the corresponding number of views - article_view_coun
 ```sql
 create view article_view_count as select b1.title, count(*) as views
 from articles b1
-left join log b2 on b2.path like concat('%', b1.slug)
+left join log b2 on b2.path = '/article/' || b1.slug
 group by b1.id, b1.title, b1.id, b2.path
 order by views desc;
 ```

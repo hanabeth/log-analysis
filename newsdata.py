@@ -34,7 +34,7 @@ def execute_query(query):
             query - an SQL query statement to be executed.
        Returns:
             List of tuples containing the results of the query.
-    """   
+    """
     try:
         db = psycopg2.connect(database='news')
         cur = db.cursor()
@@ -54,7 +54,7 @@ def print_results(results):
             result - result returned from SQL query.
        Output:
             Prints out the result nicely formatted.
-    """ 
+    """
     print('-'*50)
     for row in results:
         print('{0:<35}|{1:>10}'.format(row[0], row[1]))
@@ -85,7 +85,7 @@ def error_rate():
         print('\n\n')
 
 
-if __name__ == '__main__':                        
+if __name__ == '__main__':
     three_top_articles()
     three_top_authors()
     error_rate()

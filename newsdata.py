@@ -1,10 +1,9 @@
-# !/usr/bin/env python3
+#!/usr/bin/env python3
 import psycopg2
 
 # Query to find the three most viewed articles, displaying title and view count
 top_articles = """SELECT title, views
                   FROM article_view_count
-                  GROUP BY title, views
                   ORDER BY views DESC
                   LIMIT 3;"""
 

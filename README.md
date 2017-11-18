@@ -63,38 +63,43 @@ The database has three tables:
 
 View of articles title and the corresponding number of views - article_view_count
 ```sql
-create view article_view_count as select b1.title, count(*) as views
+create view article_view_count as 
+SELECT b1.title, views
 from articles b1
-left join log b2 on b2.path = '/article/' || b1.slug
-group by b1.id, b1.title, b1.id, b2.path
+left join (
+  SELECT path, count(*) AS views
+  FROM log
+  GROUP BY path
+) b2 
+on b2.path = '/article/' || b1.slug
 order by views desc;
 ```
 
 View of error count - error_count
 ```sql
 create view error_count as
-select date(time), count(*) as errors
-from log
-where status != '200 OK'
-group by date(time)
-order by count(status);
+SELECT date(time), count(*) as errors
+FROM log
+WHERE status != '200 OK'
+GROUP BY date(time)
+ORDER BY count(status);
 ```
 
 View with count of all status codes - total_status_count
 ```sql
 create view total_status_count as
-select date(time), count(status)      
-from log
-group by date(time)
-order by count(status);
+SELECT date(time), count(status)      
+FROM log
+GROUP BY date(time)
+ORDER BY count(status);
 ```
 
 View to find percentage of error status codes in a day - find_error_percent
 ```sql
 create view find_error_percent as
-select error_count.date, round((100.0*error_count.errors)/total_status_count.count, 2) as percent
-from error_count, total_status_count
-where error_count.date = total_status_count.date;
+SELECT error_count.date, round((100.0*error_count.errors)/total_status_count.count, 2) as percent
+FROM error_count, total_status_count
+WHERE error_count.date = total_status_count.date;
 ```
 
 

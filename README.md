@@ -105,4 +105,4 @@ WHERE error_count.date = total_status_count.date;
 
 ## License
 
-This program is based off of a project from [Udacity's Full Stack Web Developer Nanodegree](https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004). fresh_tomatoes.py is also given by Udacity.
+This program is based off of a project from [Udacity's Full Stack Web Developer Nanodegree](https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004).
